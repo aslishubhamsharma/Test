@@ -32,19 +32,19 @@ export class AppComponent {
   position: any;
 
 
-  showEmployeeDetails(event: any, employeeId: number) {
-    // Get employee details based on the employeeId
-    const employee = this.employeeData.find((e: any) => e.id === employeeId);
-    if (employee) {
-      this.employeeDetails = employee;
-      const detailsElement: any = document.querySelector('.employee-details');
-      detailsElement.style.display = 'block';
+  // showEmployeeDetails(event: any, employeeId: number) {
+  //   // Get employee details based on the employeeId
+  //   const employee = this.employeeData.find((e: any) => e.id === employeeId);
+  //   if (employee) {
+  //     this.employeeDetails = employee;
+  //     const detailsElement: any = document.querySelector('.employee-details');
+  //     detailsElement.style.display = 'block';
 
-      // Position the details element next to the mouse cursor
-      detailsElement.style.left = event.clientX + 'px';
-      detailsElement.style.top = event.clientY + 'px';
-    }
-  }
+  //     // Position the details element next to the mouse cursor
+  //     detailsElement.style.left = event.clientX + 'px';
+  //     detailsElement.style.top = event.clientY + 'px';
+  //   }
+  // }
 
   constructor() { }
 
