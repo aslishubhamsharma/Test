@@ -8,21 +8,28 @@ import {
   DxSelectBoxModule,
   DxNumberBoxModule,
   DxFormModule,
+  DxPopoverModule,
 } from 'devextreme-angular';
+import { DxButtonModule } from 'devextreme-angular';
+
+
+
 
 @NgModule({
-    declarations: [
-      AppComponent
-    ],
-    imports: [
-      BrowserModule,
-      AppRoutingModule,
-      DxCheckBoxModule,
-      DxSelectBoxModule,
-      DxNumberBoxModule,
-      DxFormModule,
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
-  })
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DxCheckBoxModule,
+    DxSelectBoxModule,
+    DxNumberBoxModule,
+    DxFormModule,
+    DxButtonModule,
+    DxPopoverModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
 export class AppModule { }
